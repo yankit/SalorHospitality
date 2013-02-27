@@ -1,25 +1,25 @@
 ---
 cn:
   statistic_categories:
-    new:
+    new:新
       edit_statistic_category: 编辑统计类别
       new_statistic_category: 新统计类别
   activerecord:
     attributes:
-      camera:
+      camera: 相机
         name: 名称
         description: Description
-        host_internal: Internal host
-        host_external: External host
-        port: Port
+        host_internal: Internal host内部主机
+        host_external: External host外部主机
+        port: Port端口
         url_snapshot: URL Snapshot
         url_stream: URL Stream
         active: active
         hidden: delete
-      statistic_category:
+      statistic_category:统计类别
         hidden: delete
         name: 名称
-      payment_method:
+      payment_method:支付方法
         name: 名称
         cash: Cash
         change: Change
@@ -28,7 +28,7 @@ cn:
       booking_item:
         base_price: Price
         count: Count
-        sum: Sum
+        sum: Sum总数
         duration: Days
       order:
         change_given: Change
@@ -36,19 +36,19 @@ cn:
       customer:
         language: Language
         table_id: Default Table
-        first_name: First Name
-        last_name: Last Name
-        full_name: Name
-        company_name: Company Name
-        address: Address
-        city: City
-        state: State
-        postalcode: Postal Code
-        m_number: Loyalty Card Code
-        m_points: Loyalty Points
-        email: email
-        telephone: Telephone
-        cellphone: Cellphone
+        first_name: First Name名字
+        last_name: Last Name姓氏
+        full_name: Name全名
+        company_name: Company Name公司名称
+        address: Address地址
+        city: City城市
+        state: State省份
+        postalcode: Postal Code邮编
+        m_number: Loyalty Card Code积分卡号
+        m_points: Loyalty Points积分
+        email: email电子邮件
+        telephone: Telephone电话
+        cellphone: Cellphone手机
         hidden: delete
       article:
         statistic_category_id: Statistic-Category
@@ -708,7 +708,7 @@ cn:
       login: 登入
       password: 密码
       username: 用户
-  settlements:
+  settlements:结算
     detailed_list:
       count: 计算
       order_number_on_table_on_date: ! '%{order} number %{number} on %{table} at %{time}'
@@ -720,7 +720,7 @@ cn:
       end_date: 结束日期
       start_date: 开始日期
       sum_total: 总计
-    settlement:
+    settlement:结算
       finish: 完毕
       print: 打印
       start: 开始
@@ -732,55 +732,55 @@ cn:
   split_order: 拆分订单
   statistic: Statistic
   stocks:
-    new:
+    new:新
       edit_stock: Edit Stock
       new_stock: New Stock
   refund: 退款
   sum: 总计
-  surcharges:
-    new:
+  surcharges:附加费
+    new:新
       add_tax_amount: Add tax amount
       common_surcharge: Common Surcharge
       edit_surcharge: Edit Surcharge
       new_surcharge: New Surcharge
   tables:
-    create:
+    create:新建
       license_limited: Your License is limited to %{count} tables
       success: 桌子成功创建
-    destroy:
+    destroy:删除
       success: 桌子成功删除
-    new:
+    new:新
       edit_table: 编辑桌子
       new_table: 新桌子
   tax_amount: 总计
-  taxes:
-    new:
+  taxes:税
+    new:新
       edit_tax: 编辑税
       new_tax: 新税
   statistics:
     index:
       hour: 小时
       weekday: 工作日
-  users:
-    create:
+  users:用户
+    create:新建
       success: 用户成功创建
-    destroy:
+    destroy:删除
       success: 用户成功删除
-    new:
+    new:新
       edit_user: 编辑用户
       new_user: 新用户
       select_with_ctrl_key: Select or deselect with [Ctrl] + Left Mouse Button
   various:
     no_connection_retry: No connection to the Server. Send again? If you cancel, the
-      items will be saved locally.
-    successfully_sent: The items were successfully sent.
+      items will be saved locally.无法连接到服务器，再次寄出？如果取消，项目将在本地自动储存。
+    successfully_sent: The items were successfully sent.项目成功寄出
     table_contains_offline_items: This order contains items which haven't been confirmed
       by the server yet. Will display locally saved version of the order only. The
-      server may have an updated version. Please check correctness of the order manually.
-    statistics: Statistics
-    customer_request_send: Request these items
-    customer_request_finish: Request payment
-    customer_request_waiter: Request waiter
+      server may have an updated version. Please check correctness of the order manually.此项订单含有无法被服务器确认的项目，只能在本地浏览已储存的版本。服务器可能有更新的版本。请亲自检查订单正确与否。
+    statistics: Statistics统计资料
+    customer_request_send: Request these items要求这些项目
+    customer_request_finish: Request payment请求付款
+    customer_request_waiter: Request waiter呼叫服务员
     order_will_be_confirmed: Your order will be confirmed by a waiter shortly
     finish_was_requested: You have requested payment. Please have a little patience,
       we will be there for your shortly.
